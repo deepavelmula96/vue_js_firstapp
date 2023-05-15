@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ParentToChildData/>
+  <hr>
+  <FormInputs/>
+  <hr>
+  <HelloWorld msg="Welcome to Your first Vue.js App" />
+  <hr>
+  <Home/>
+
 </template>
 
 <script>
+import FormInputs from './components/FormInputs.vue';
 import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue';
+import ParentToChildData from './components/ParentToChildData.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+    HelloWorld,
+    // Hello,
+    Home,
+    FormInputs,
+    ParentToChildData
+}
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+

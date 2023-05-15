@@ -1,0 +1,13 @@
+1.install vue globally
+npm install -g @vue/cli
+2. to check vue is installed or not
+vue -V
+3. to create app in vue
+vue create firstapp
+selete vue 3
+4. to start the app
+npm run serve
+
+
+5. for multi word error
+npm remove @vue/cli-plugin-eslint
