@@ -1,6 +1,8 @@
 <template>
 <h1>Form</h1>
 <!-- 1. input -->
+<label for="firstName">First Name</label> &nbsp;
+<input type="text" v-model="firstName"  id="firstName" placeholder="enter your firstName"/> {{ firstName }} <br><br>
 <input type="text" placeholder="enter email" v-model="email"><br> <br>
 <input type="password" placeholder="enter password" v-model="password"> <br> <br>
 <!--2. checkbox  -->
@@ -39,6 +41,7 @@ export default {
     name: "FormInputs",
     data() {
         return {
+            firstName:"",
             email: null,
             password: null,
             technology: [],
@@ -73,7 +76,11 @@ export default {
     methods: {
         getDetails() {
             console.log("your Details", this.email, this.password);
+        },
+        changeHandler(){
+            console.log("new Name",this.firstName)
         }
+    
     }
 }
 </script>

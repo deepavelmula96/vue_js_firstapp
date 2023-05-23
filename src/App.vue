@@ -1,4 +1,5 @@
 <template>
+  <FormInput/>
   <ParentToChildData/>
   <hr>
   <FormInputs/>
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import FormInput from './components/Examples/FormInput.vue';
 import FormInputs from './components/FormInputs.vue';
 import HelloWorld from './components/HelloWorld.vue'
 import Home from './components/Home.vue';
@@ -22,7 +24,8 @@ export default {
     // Hello,
     Home,
     FormInputs,
-    ParentToChildData
+    ParentToChildData,
+    FormInput
 }
 }
 </script>

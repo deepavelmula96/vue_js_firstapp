@@ -11,3 +11,10 @@ npm run serve
 
 5. for multi word error
 npm remove @vue/cli-plugin-eslint
+
+=====================================================
+6. emmit extension
+Vue 3 Snippets
+-->vueinit
+Vetur
+==============================
